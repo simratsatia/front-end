@@ -104,11 +104,11 @@
                     "appSettings": [
                         {
                             "name": "CATALOGUE_URL",
-                            "value": "[parameters('catalogueUrl)]"
+                            "value": "[parameters('catalogueUrl')]"
                         },
                         {
                             "name": "TAGS_URL",
-                            "value": "[parameters('tagsUrl)]"
+                            "value": "[parameters('tagsUrl')]"
                         }
                     ]
                 },

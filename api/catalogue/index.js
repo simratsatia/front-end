@@ -15,6 +15,11 @@
   });
 
   app.get("/catalogue*", function (req, res, next) {
+    if (req.url.includes("/?")){
+      req.url = req.url.replace("\/\?", "?");
+      req.originalUrl = req.url;
+    }
+      
     helpers.simpleHttpRequest(endpoints.catalogueUrl + req.url.toString(), res, next);
   });
 
