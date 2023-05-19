@@ -1,0 +1,41 @@
+{
+    "servicename": {
+        "value": "llm-hackathon-appservice-3"
+    },
+    "branch": {
+        "value": "master"
+    },
+    "repoURL": {
+        "value": "https://github.com/microservices-demo/front-end"
+    },
+    "region": {
+        "value": "West Europe"
+    },
+    "sku": {
+        "value": {
+            "name": "B1",
+            "tier": "Basic",
+            "size": "B1",
+            "family": "B",
+            "capacity": 1
+        }
+    },
+    "deploymentkind": {
+        "value": "linux"
+    },
+    "linuxFxVersion": {
+        "value": "NODE|16-lts"
+    },
+    "tags": {
+        "value": {
+            "confidentiality": "internal",
+            "environment": "production"
+        }
+    },
+    "catalogueUrl": {
+        "value": "https://catalogue-llm-test.azurewebsites.net%s"
+    },
+    "tagsUrl": {
+        "value": "https://catalogue-llm-test.azurewebsites.net/tags"
+    }
+}
