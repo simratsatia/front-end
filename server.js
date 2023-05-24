@@ -1,3 +1,4 @@
+require('dotenv').config();
 var request      = require("request")
   , express      = require("express")
   , morgan       = require("morgan")
@@ -15,7 +16,7 @@ var request      = require("request")
   , metrics      = require("./api/metrics")
   , app          = express()
 
-
+require('dotenv').config();
 app.use(helpers.rewriteSlash);
 app.use(metrics);
 app.use(express.static("public"));
@@ -27,7 +28,7 @@ else {
     console.log('Using local session manager');
     app.use(session(config.session));
 }
-
+console.log(process.env.CATALOGUE_URL);
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(helpers.sessionMiddleware);

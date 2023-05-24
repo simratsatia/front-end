@@ -15,8 +15,8 @@
   });
 
   module.exports = {
-    catalogueUrl:  util.format(process.env.CATALOGUE_URL, domain),
-    tagsUrl:       util.format(process.env.TAGS_URL, domain),
+    catalogueUrl:  util.format(process.env.CATALOGUE_URL + "%s", domain),
+    tagsUrl:       util.format(process.env.TAGS_URL + "%s", domain),
     cartsUrl:      util.format("http://carts%s/carts", domain),
     ordersUrl:     util.format("http://orders%s", domain),
     customersUrl:  util.format("http://user%s/customers", domain),
